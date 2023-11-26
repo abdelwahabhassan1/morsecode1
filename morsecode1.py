@@ -8,12 +8,19 @@ morse_code_dict = {
     '8': '---..', '9': '----.', '0': '-----', ' ': '/'}   
  #This dictionary maps each character (both uppercase and numbers) to its Morse code representation.
 
-def encrypt_morse_code(text):
+def encrypt_morse_code(text):             #text is the input phrase that will be encrypted 
     encrypted_result = ""
-    
+                                            #It converts the character to uppercase
     for char in text:
         char_upper = char.upper()
         if char_upper in morse_code_dict:
             encrypted_result += morse_code_dict[char_upper] + ' '
 
-    return encrypted_result.rstrip()
+    return encrypted_result.rstrip()              #it removes the trailing space using rstrip() and returns the encrypted result.
+
+
+def decrypt_morse_code(code):
+    decrypted_result = ""
+    morse_to_char = {value: key for key, value in morse_code_dict.items()}
+
+    
