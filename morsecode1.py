@@ -5,7 +5,8 @@ morse_code_dict = {
     'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
     'Y': '-.--', 'Z': '--..',
     '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...',
-    '8': '---..', '9': '----.', '0': '-----', ' ': '/'}
+    '8': '---..', '9': '----.', '0': '-----', ' ': '/'}   
+ #This dictionary maps each character (both uppercase and numbers) to its Morse code representation.
 
 def encrypt_morse_code(text):
     encrypted_result = ""
