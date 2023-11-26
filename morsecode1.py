@@ -22,5 +22,11 @@ def encrypt_morse_code(text):             #text is the input phrase that will be
 def decrypt_morse_code(code):
     decrypted_result = ""
     morse_to_char = {value: key for key, value in morse_code_dict.items()}
+    for word in code.split():
+        if word in morse_to_char:
+            decrypted_result += morse_to_char[word]
+
+    return decrypted_result
+
 
     
