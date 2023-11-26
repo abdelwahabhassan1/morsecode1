@@ -19,9 +19,10 @@ def encrypt_morse_code(text):             #text is the input phrase that will be
     return encrypted_result.rstrip()              #it removes the trailing space using rstrip() and returns the encrypted result.
 
 
-def decrypt_morse_code(code):
+def decrypt_morse_code(code):                              # code is the input Morse code to be decrypted.
     decrypted_result = ""
-    morse_to_char = {value: key for key, value in morse_code_dict.items()}
+    morse_to_char = {value: key for key, value in morse_code_dict.items()}              
+     # It initializes an empty string decrypted_result to store the decrypted phrase.
     for word in code.split():
         if word in morse_to_char:
             decrypted_result += morse_to_char[word]
