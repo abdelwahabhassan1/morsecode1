@@ -30,4 +30,11 @@ def decrypt_morse_code(code):                              # code is the input M
     return decrypted_result
 
 
+# testing:
+user_input = input("Enter a phrase to encrypt: ")
+encrypted_result = encrypt_morse_code(user_input)
+print("Encrypted Morse Code:", encrypted_result)
+
+
+
     
