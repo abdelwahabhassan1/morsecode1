@@ -35,6 +35,8 @@ user_input = input("Enter a phrase to encrypt: ")
 encrypted_result = encrypt_morse_code(user_input)
 print("Encrypted Morse Code:", encrypted_result)
 
-
+user_input_decrypt = input("Enter Morse code to decrypt: ")
+decrypted_result = decrypt_morse_code(user_input_decrypt)
+print("Decrypted Phrase:", decrypted_result)
 
     
