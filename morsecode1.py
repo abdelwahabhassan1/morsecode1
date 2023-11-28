@@ -31,12 +31,12 @@ def decrypt_morse_code(code):                              # code is the input M
 
 
 # testing:
-user_input = input("Enter a phrase to encrypt: ")
+user_input = input("Enter a phrase to encrypt: ")           # It takes user input for a phrase to be encrypted.
 encrypted_result = encrypt_morse_code(user_input)
-print("Encrypted Morse Code:", encrypted_result)
+print("Encrypted Morse Code:", encrypted_result)            # It encrypts the input and prints the result.
 
-user_input_decrypt = input("Enter Morse code to decrypt: ")
+user_input_decrypt = input("Enter Morse code to decrypt: ")            # It  takes user input for Morse code to be decrypted.
 decrypted_result = decrypt_morse_code(user_input_decrypt)
-print("Decrypted Phrase:", decrypted_result)
+print("Decrypted Phrase:", decrypted_result)                           # It decrypts the input and prints the result.
 
     
